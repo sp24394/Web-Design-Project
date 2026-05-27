@@ -1,9 +1,22 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    color: white;
 }
 
 p, a, h1, h2, h3 {
     margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+label {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-size: 1.6rem;
 }
 
 header {
@@ -41,7 +54,89 @@ header img.logo {
 }
 
 #bg {
-    position: absolute;
-    width: 100%
+    width: 100%;
+    height: max(60rem, 70vh);
+    object-fit: cover;
 }
 
+main {
+    position: absolute;
+    z-index: 3;
+    top: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: min(600px, calc(100% - 60px));
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+}
+
+.sort-vert {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    width: 100%;
+    text-align: left;
+    font-size: 0.85rem;
+    padding: 2px;
+    font-weight: 300;
+}
+
+form {
+    width: min(800px, 100%);
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form div {
+    text-align: left;
+}
+
+#submit {
+    padding: 12px;
+    width: min(120px, 90%);
+    margin-top: 20px;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+footer {
+    min-height: 300px;
+    width: 100%;
+    background-color: #333;
+}
