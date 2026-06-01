@@ -60,7 +60,7 @@ header img.logo {
     object-fit: cover;
 }
 
-main {
+#contact-main {
     position: absolute;
     z-index: 3;
     top: 120px;
@@ -137,9 +137,45 @@ form div {
 }
 
 footer {
-    min-height: 300px;
     width: 100%;
+    max-width: 100%;
     background-color: #333;
     margin-top: -60px;
     clip-path: polygon(0 0, 100% 60px, 100% 100%, 0 100%);
+    padding : 60px 50px 100px;
+}
+
+.hero {
+    width: 100%;
+    height: min(60rem, 70vh);
+    object-fit: cover;
+}
+
+main div {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.btn {
+    color: white;
+    background-color: #085D49;
+    padding: 0.65rem 2.2rem;
+    border-radius: 8px;
+}
+
+.btn-alt {
+    color: #085D49;
+    outline: 1px solid #085D49;
+    padding: 0.65rem 2.2rem;
+    border-radius: 8px;
+}
+
+.btn-alt:visited {
+    color: #085D49;
+    text-decoration: none;
+}
+
+.btn-alt:active {
+    color: #085D49;
+    text-decoration: none;
 }
